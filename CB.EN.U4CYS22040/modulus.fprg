@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="r_ramaguru"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:27:48 AM"/>
+        <attribute name="created" value="cl9yYW1hZ3VydTsyMDIyMjNNQVlDMDA3NzsyMDIyLTExLTA0OzEwOjA3OjI0IEFNOzMxMzU="/>
+        <attribute name="edited" value="cl9yYW1hZ3VydTsyMDIyMjNNQVlDMDA3NzsyMDIyLTExLTA0OzEwOjI3OjQ4IEFNOzU7MzI1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter dividend&quot;" newline="True"/>
+            <comment text="enter dividend"/>
+            <input variable="a"/>
+            <output expression="&quot;enter divisor&quot;" newline="True"/>
+            <comment text="enter divisor"/>
+            <input variable="b"/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <assign variable="c" expression="a/b"/>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <assign variable="d" expression="a-b*c"/>
+            <output expression="&quot;THE REMAIDER&quot;&amp;d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
