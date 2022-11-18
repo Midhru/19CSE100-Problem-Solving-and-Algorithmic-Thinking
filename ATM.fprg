@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22040"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:32:02 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0MDsyMDIyMjNNQVlDMDA3NzsyMDIyLTExLTE4OzA4OjU5OjM3IEFNOzMwNzc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0MDsyMDIyMjNNQVlDMDA3NzsyMDIyLTExLTE4OzEwOjMyOjAyIEFNOzExOzMyMTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <declare name="e" type="Integer" array="False" size=""/>
+            <declare name="d" type="String" array="False" size=""/>
+            <output expression="&quot;Your account number&quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a==456789">
+                <then>
+                    <output expression="&quot;Your name:&quot;" newline="True"/>
+                    <input variable="d"/>
+                    <output expression="&quot;BANK BALANCE&quot;" newline="True"/>
+                    <input variable="c"/>
+                    <output expression="&quot;enter your pin&quot;" newline="True"/>
+                    <input variable="b"/>
+                    <if expression="b==1234">
+                        <then>
+                            <if expression="c&gt;500">
+                                <then>
+                                    <output expression="&quot;Enter the amount&quot;" newline="True"/>
+                                    <input variable="e"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;INSUFFICIENT AMOUNT&quot;" newline="True"/>
+                                </else>
+                            </if>
+                            <if expression="e&lt;c">
+                                <then>
+                                    <output expression="&quot;your withdrawl is succesful&quot;" newline="True"/>
+                                    <output expression="&quot;the remaining balance is &quot;&amp;(c-e)" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;INSUFFICIENT AMOUNT&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;wrong pin&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;wrong pin&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
