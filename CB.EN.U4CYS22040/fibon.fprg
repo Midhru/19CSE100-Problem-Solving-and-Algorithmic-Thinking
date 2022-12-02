@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:32:08 AM"/>
+        <attribute name="created" value="dXNlcjtSQUFTOzIwMjItMTItMDI7MDk6NTc6NDQgQU07MjAxMQ=="/>
+        <attribute name="edited" value="dXNlcjtSQUFTOzIwMjItMTItMDI7MTA6MzI6MDggQU07MzsyMTA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, g, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#235;nter the number&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="c" expression="0"/>
+            <assign variable="g" expression="1"/>
+            <for variable="i" start="1" end="a" direction="inc" step="1">
+                <assign variable="b" expression="g+c"/>
+                <assign variable="g" expression="c"/>
+                <assign variable="c" expression="b"/>
+                <output expression="b" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

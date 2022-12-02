@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:26:15 AM"/>
+        <attribute name="created" value="dXNlcjtSQUFTOzIwMjItMTItMDI7MDk6MjA6MTkgQU07MjAwMw=="/>
+        <attribute name="edited" value="dXNlcjtSQUFTOzIwMjItMTItMDI7MDk6MjY6MTUgQU07MTsyMTEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, w" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="b" expression="1"/>
+            <for variable="w" start="1" end="a" direction="inc" step="1">
+                <assign variable="b" expression="b*w"/>
+            </for>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
